@@ -1,0 +1,33 @@
+333  docker images 
+  334  docker push myapache:v4 
+  335  docker login 
+  336  docker login -u amitvashist7
+  337  docker push myapache:v4 
+  338  docker images 
+  339  docker tag myapache:v4 amitvashist7/docker-k8s-ey-14-Sept-2024
+  340  docker tag myapache:v4 amitvashist7/docker-k8s-ey-14-Sept-2024:v4
+  341  docker tag myapache:v4 amitvashist7/docker-k8s-ey-14-sept-2024:v4
+  342  docker images 
+  343  docker push myapache:v4 
+  344  docker push amitvashist7/docker-k8s-ey-14-sept-2024:v4 
+  345  docker tag myapache:v3 amitvashist7/docker-k8s-ey-14-sept-2024:v3
+  346  docker tag myapache:v2 amitvashist7/docker-k8s-ey-14-sept-2024:v2
+  347  docker tag myapache:v1 amitvashist7/docker-k8s-ey-14-sept-2024:v1
+  348  docker images 
+  349  docker push amitvashist7/docker-k8s-ey-14-sept-2024:v3
+  350  docker push amitvashist7/docker-k8s-ey-14-sept-2024:v2
+  351  docker push amitvashist7/docker-k8s-ey-14-sept-2024:v1
+  352  docker ps 
+  353  docker kill $(docker ps -q) 
+  354  docker rm $(docker ps -qa) 
+  355  docker images 
+  356  docker images -q
+  357  docker rmi $(docker images -q)
+  358  docker rmi $(docker images -q) --force
+  359  ls
+  360  docker ps -a 
+  361  docker images 
+  362  docker logout 
+  363  docker run -d --name web-app-1 amitvashist7/docker-k8s-ey-14-sept-2024:v4 
+  364  docker images 
+
