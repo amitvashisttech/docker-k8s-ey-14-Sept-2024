@@ -4,8 +4,6 @@
   336  docker login -u amitvashist7
   337  docker push myapache:v4 
   338  docker images 
-  339  docker tag myapache:v4 amitvashist7/docker-k8s-ey-14-Sept-2024
-  340  docker tag myapache:v4 amitvashist7/docker-k8s-ey-14-Sept-2024:v4
   341  docker tag myapache:v4 amitvashist7/docker-k8s-ey-14-sept-2024:v4
   342  docker images 
   343  docker push myapache:v4 
