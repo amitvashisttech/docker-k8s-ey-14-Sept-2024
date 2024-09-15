@@ -1,14 +1,3 @@
-  115  cd 01-Docker/
-  119  apt-get install tree -y
-  120  ls
-  121  tree 04-DockerImages/
-  122  cd 04-DockerImages/apache/v1/
-  123  ls
-  124  vim Dockerfile
-  125  ls
-  126  cat Dockerfile
-  127  docker build myapache
-  128  docker build myapache:v1 .
   129  docker build -t myapache:v1 .
   130  docker images
   131  docker history f001e8ba63ee
