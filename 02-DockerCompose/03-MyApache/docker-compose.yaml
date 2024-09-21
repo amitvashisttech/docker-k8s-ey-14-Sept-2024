@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8000:80"
+
+
+
+  myapache:
+    image: amitvashist7/docker-k8s-ey-14-sept-2024:v2
+    ports:
+      - "8001:80"

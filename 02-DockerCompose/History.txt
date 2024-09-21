@@ -1,0 +1,202 @@
+    1  ls
+    2  git clone https://github.com/amitvashisttech/docker-k8s-ey-14-Sept-2024.git
+    3  ls
+    4  cd docker-k8s-ey-14-Sept-2024/
+    5  ls
+    6  mkdir 01-Docker
+    7  mv * 01-Docker
+    8  ls
+    9  cd 01-Docker/
+   10  ls
+   11  cd 01-Docker-Installation/
+   12  ls
+   13  sh install-docker.sh 
+   14  ls
+   15  docker version 
+   16  ls
+   17  cd ..
+   18  ls
+   19  cd ..
+   20  ls
+   21  mkdir 02-DockerCompose 
+   22  ls
+   23  cd 02-DockerCompose/
+   24  ls
+   25  mkdir 00-Setup
+   26  ls
+   27  cd 00-Setup/
+   28  ls
+   29  cd ..
+   30  ls
+   31  mv 00-Setup 01-Setup
+   32  ls
+   33  cd 01-Setup/
+   34  ls
+   35  vim install-docker.sh 
+   36  ls
+   37  cat install-docker.sh 
+   38  chmod +x install-docker.sh 
+   39  sh install-docker.sh 
+   40  docker-compose version 
+   41  ls
+   42  cd ..
+   43  ls
+   44  mkdir 02-Nginx
+   45  ls
+   46  cd 02-Nginx/
+   47  ls
+   48  vim docker-compose.yaml 
+   49  docker run -d --name nginx-text -p 8080:80 nginx:latest
+   50  docker ps 
+   51  curl localhost:8080
+   52  docker run -d --name nginx-text -p 8080:80 nginx:latest
+   53  docker run -d -p 8080:80 nginx:latest
+   54  ls
+   55  vim docker-compose.yaml 
+   56  ls
+   57  docker-compose --help
+   58  docker-compose up 
+   59  docker ps 
+   60  docker-compose up -d 
+   61  docker ps 
+   62  docker-compose up -d 
+   63  docker kill c6314d0c66d4
+   64  docker ps 
+   65  docker-compose up -d 
+   66  docker ps 
+   67  history 
+   68  cat docker-compose.yaml 
+   69  ls
+   70  cd ..
+   71  ls
+   72  cd 02-Nginx/
+   73  s
+   74  ls
+   75  docker ps 
+   76  docker run -d  nginx:latest
+   77  docker ps 
+   78  ls
+   79  docker-compose ps 
+   80  docker-compose kill 
+   81  docker-compose ps 
+   82  docker-compose start
+   83  docker-compose ps 
+   84  docker-compose kill 
+   85  docker-compose rm
+   86  docker-compose ps 
+   87  docker ps 
+   88  docker ps -a 
+   89  docker kill a4c37a731da4
+   90  docker ps 
+   91  docker ps -a 
+   92  docker start a4c37a731da4
+   93  docker ps 
+   94  docker kill a4c37a731da4
+   95  docker ps -a 
+   96  docker rm a4c37a731da4
+   97  docker ps -a 
+   98  docker-compose ps 
+   99  docker-compose up -d 
+  100  docker-compose ps 
+  101  docker-compose kill 
+  102  docker-compose ps 
+  103  docker-compose rm
+  104  docker-compose ps 
+  105  docker-compose up -d 
+  106  docker-compose ps 
+  107  docker-compose kill 02-nginx_nginx_1
+  108  docker-compose kill --help
+  109  docker-compose kill nginx 
+  110  cat docker-compose.yaml 
+  111  ls
+  112  cd ..
+  113  ls
+  114  cp -rf 02-Nginx 03-MyApache
+  115  ls
+  116  cd 03-MyApache/ls
+  117  ls
+  118  cd 03-MyApache/
+  119  s
+  120  ls
+  121  vim docker-compose.yaml 
+  122  ls
+  123  docker ps 
+  124  ls
+  125  docker-compose ps 
+  126  docker-compose up -d 
+  127  docker ps 
+  128  curl localhost:8090
+  129  curl localhost:8091
+  130  curl localhost:8091/info.html
+  131  ls
+  132  docker-compose up -d 
+  133  vim docker-compose.yaml 
+  134  docker-compose up -d 
+  135  vim docker-compose.yaml 
+  148  cd 03-MyApache/
+  149  ls
+  150  docker-compose up -d 
+  151  ls
+  152  > docker-compose.yaml 
+  153  vim docker-compose.yaml 
+  154  ls
+  155  docker-compose up -d 
+  156  docker ps 
+  157  ls
+  158  cd ..
+  159  ls
+  160  cp -rf 03-MyApache/docker-compose.yaml 02-Nginx/
+  161  ls
+  162  cd 01-Setup/
+  163  ls
+  164  vim install-docker.sh 
+  165  ls
+  166  cd ..
+  167  ls
+  168  cd 02-Nginx/
+  169  ls
+  170  cat docker-compose.yaml 
+  171  docker ps 
+  172  docker kill $(docker ps -qa) 
+  173  docker rm $(docker ps -qa) 
+  174  ls
+  175  cd ..
+  176  ls
+  177  cd 03-MyApache/
+  178  ls
+  179  vim docker-compose.yaml 
+  180  docker-compose up -d 
+  181  vim docker-compose.yaml 
+  182  docker-compose up -d 
+  183  docker ps 
+  184  vim docker-compose.yaml 
+  185  docker-compose up -d 
+  186  docker ps 
+  187  docker-compose up -d
+  188  docker ps 
+  189  ls
+  190  history 
+  191  ls
+  192  docker-compose up -d 
+  193  docker-compose stop 
+  194  docker-compose up -d 
+  195  docker-compose kill 
+  196  docker-compose start 03-myapache-myapache-1
+  197  docker-compose start myapache
+  198  docker-compose ps 
+  199  docker-compose up -d 
+  200  docker-compose ps 
+  201  docker-compose kill 
+  202  docker-compose rm  
+  203  ls
+  204  cd ..
+  205  ls
+  206  history 
+  207  history | sort -u 
+  208  history > abc.txt 
+  209  ls
+  210  history 
+  211  history | awk '{print $1}'
+  212  history | awk '{print $2}'
+  213  history | awk '{print $2}' | sort -u 
+  214  history > History.txt
