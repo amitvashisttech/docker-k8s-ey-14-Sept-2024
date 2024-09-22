@@ -1,0 +1,20 @@
+##
+
+```
+kubectl cluster-info
+kubectl api-versions
+kubectl api-resources
+```
+
+```
+kubectl proxy --address='172.31.0.100' --port=8001 --accept-hosts='.' --accept-paths='.' &
+```
+
+
+```
+curl -k https://172.31.0.100:6443
+curl http://172.31.0.100:8001
+curl http://172.31.0.100:8001/apis
+curl http://172.31.0.100:8001/api/v1
+curl http://172.31.0.100:8001/api/v1/pods
+```
