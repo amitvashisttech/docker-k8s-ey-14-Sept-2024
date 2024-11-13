@@ -57,7 +57,7 @@ docker run -d --name job2 -p 8080:80 myapache:v5
 #### 2. Install network tools in a container:
 
 ```
-apt-get install net-tools -y
+apt-get install net-tools iputils-ping -y
 ```
 #### 3. Check open ports on the host:
 ```
